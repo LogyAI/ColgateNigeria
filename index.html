@@ -5,21 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <title>Colgate Nigeria Dental Reports| Powered by Logy.AI</title>
+    <title>Document</title>
 
 </head>
 <style>
+    @font-face{
+        font-family: 'Colgate';
+        src: url('files/font/COLGATEREADY-REGULAR.OTF')
+    }
     body{
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Colgate';
     }
     #header{
-        background: rgba(0, 0, 0, 0.05);
-        background: url(images/bg2.svg);
+        height: 700px;
+        background: rgb(255, 255, 255);
+        background-image: url(images/bg1.png);
         background-size: cover;
-        background-position: center;
+        background-position: bottom;
+    }
+    #signal{
+        background: red;
+        border-top-left-radius: 32px;
+        border-bottom-right-radius: 32px;
+        border-bottom-left-radius: 32px;
+    }
+    #fetrow1{
+        padding: 0;
+    }
+    #botbg{
+        background: url(images/bg3.png);background-size: cover;min-height: 800px;background-position: center;
+    }
+    #logoformob{
+        display: none;
+    }
+    #logoforpc{
+        display: block;
+    }
+    .navbar-light .navbar-toggler{
+        border: none;
+    }
+    #tagline{
+        width: 45%;
+    }
+    #mypock{
+        width: 25%;transform: translateY(-30px);
+    }
+    #powermob{
+        display: none;
+    }
+    #pcnav{
+        display: block;
     }
 </style>
 <style>
@@ -143,239 +180,338 @@
       background: #e7dfd296;
   }
 }
+@media screen and (max-width: 767px) {
+  #header{
+      height: 920px;
+      background-image: url(images/bg1x.png);
+  }
+  #signal{
+        border-radius: 32px;
+    }
+    #fetrow1{
+        padding: 12px;
+    }
+    #botbg{
+        background: url(images/bg3x.svg);background-size: cover;
+    }
+    #logoformob{
+        display: block;
+    }
+    #logoforpc{
+        display: none;
+    }
+    #tagline{
+        width: 85%;
+    }
+    #mypock{
+        width: 45%;transform: translateY(0px);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #tolfree{
+        width: 100%;
+    }
+    #powerpc{
+        display: none;
+    }
+    #powermob{
+        display: block;
+    }
+    #pcnav{
+        display: none;
+    }
+}
+</style>
+<style>
+#sidenavbutton{
+    display: none;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #000000;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    #sidenavbutton{
+    display: block;
+}
+}
 </style>
 <body>
+    
+  <nav id="pcnav" class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        
+      </ul>
+      <span class="navbar-text">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item mx-4">
+          <a style="background: #9c9c9c;" class="nav-link  px-4 text-white rounded-pill h5 active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a style="background: #9c9c9c;" class="nav-link  px-4 text-white rounded-pill h5" href="#">About</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a style="background: #9c9c9c;" class="nav-link  px-4 text-white rounded-pill h5" href="#">Register</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a style="background: #9c9c9c;" class="nav-link  px-4 text-white rounded-pill h5" href="#">Products</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a style="background: #9c9c9c;" class="nav-link  px-4 text-white rounded-pill h5" href="#">Contacts</a>
+        </li>
+        
+       
+      </ul>
+        
+      </span>
+    </div>
+  </div>
+</nav>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Register</a>
+  <a href="#">Products</a>
+  <a href="#">Contacts</a>
+</div>
+<span class="ms-3 my-2" id="sidenavbutton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+
     <div id="header">
-        <br>
         <div class="container">
-            <div class="row">
-                <div class="col-md-9"></div>
-                <div class="col-md-3">
-                    <p class="p-3 shadow" style="border-radius: 16px;background: #fff;"><b style="color: red;">1800-266-2336</b>
-Consult a dentist via toll free number</p>
-                </div>
-            </div>
-            <br>
-            <div class="row pt-3">
-                <div class="col-md-5 ">
-                    <img src="images/logo.png" alt="">
-                    <br>
-                    <br>
-                    <h3 class="w-75 text-white" style="font-weight: 400;">Because everyone deserves the best dental care.</h3>
-                    <h3 class="text-white" style="font-weight: 600;">#keepsmiling</h3>
-                    <br>
-                   
-                    <a href="#" id="">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <div class="row">
-                        <div class="col-8">
-    
-                            <input placeholder="Enter your promo code here"class="form-control w-100 rounded-pill" type="text">
-                        </div>
-                        <div class="col-4 " style="padding-left: 0 !important;">
-    
-                            <button onclick="window.location='Form.html'"class="w-100 btn btn-dark rounded-pill">apply</button>
+                    <div class="col-md-2 float-end   ms-auto text-center" id="tolfree"> 
+                        <br>
+                        <div class="col-md-12 bg-white px-3 py-2 rounded-pill" style="border: solid 2px black;">
+                            <h5 class="m-0 p-0">Toll-free number</h5>
+                            <h5 class="m-0 p-0">1800 266 2336</h5>
                         </div>
                     </div>
-                    </a>
-                    <br/>
-                </div>
-                <div class="col-md-7 mt-auto h-100 text-center">
-                    <img class="w-100 "  src="images/doctor_Nigeria.png" alt="">
+                    <img style="" id="mypock" src="images/mypocketlogo.svg" alt="">
+                    <h2 class="text-white" id="tagline" style="">Because everyone deserves the best dental care</h3>
+                        <div class="row mt-3">
+                            <div class="col-md-2">
+
+                                <img class="mt-3" style="width: 100%;transform: translateY(-30px);" src="images/keepsmiling.svg" alt="">
+                            </div>
+                            <div class="col">
+                                <a href="getstarted.html" class="bg-light px-5 py-2 text-dark rounded-pill h3" style="text-decoration: none;box-shadow: 0px 0px 16px white;"><strong>GET STARTED</strong></a>
+                            </div>
+                            
+                        </div>
+                        
+                    
+            
+            <br>
+            
+        </div>
+        
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="" style="background: url(images/bg2.png);border-radius: 32px;background-size: cover;">
+            <div class="row m-0 " id="fetrow1">
+                <div class="col-md-2  text-center mb-3" id="signal" style="">
+                    <img class="my-3 w-50" src="images/vibrate.svg" alt="">
+                    <h4 style="width: 70%;text-justify:d;" class=" mx-auto text-white mb-3">Your free dental consultation is now a call away</h3>
+                        <br>
+                    </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-7 text-center" style="background: #f0f0f0de;border-radius: 32px;">
+                    <h1 class="my-2 display-4" style="color: red;"><b>FEATURES</b></h1>
+                    <h4 class="mt-3 mx-auto" style="width: 85%;">While not everyone has access to a dentist, most Nigerians have a mobile phone. Colgate My Pocket Dentist is a free online consultation service to provide the best oral care to everyone <br></h3>
                 </div>
             </div>
+            <div class="row m-0" style="">
+                <div class="col-md-2  text-center" style="">
+                    
+                    </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-7 text-right" style="">
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-9  text-white ">
+                            <h5 class="p-3 my-2 " style="border-radius: 16px;background: red;">150 + partner dentists</h4>
+                            <h5 class="p-3 my-2 " style="border-radius: 16px;background: red;">Free consultation for all</h4>
+                            <h5 class="p-3 my-2 " style="border-radius: 16px;background: red;">Consult a dentist via 1800-266-2336</h4>
+                            <h5 class="p-3 my-2 " style="border-radius: 16px;background: red;">Access through audio or video call</h4>
+                                <br>
+                                <br>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
     <br>
-    <div class="container">
-        <div class="row mx-1" id="featbod">
-            <div class="col-md-2"></div>
-            <div class="col-md-10 pb-5 ">
-                <br><br>
-                <div class="row">
-                    <div class="col-md-5"></div>
-                    <div class="col-md-7 ml-auto p-3">
-                        <h1 class="" style="color: red;">Features</h1>
-                        <h6 class="text-dark">While not everyone has access to a dentist, most Indians have a mobile phone. Dentists for Me is a free online consultation service that connects people with leading dentists, using just their phone. To make this possible, we have partnered with over 150+ dentists across the country, to provide the best oral care to anyone and everyone.</p>
-                    </div>
-                </div>
-                <br><br>
-                <div class="row py-4 px-2 mx-1" id="featbar">
-            <div class="col-md-3 p-2">
-               <div class="row">
-                   <div class="col-4"><img class="w-100" src="images/icon-1.jpg" alt=""></div>
-                   <div class="col-8">
-                       <h6 class="mt-0 pt-2">150 + partner dentists</p></div>
-               </div>
-            </div>
-            <div class="col-md-3 p-2">
-                <div class="row">
-                   <div class="col-4"><img class="w-100" src="images/icon-2.jpg" alt=""></div>
-                   <div class="col-8">
-                       <h6 class="mt-0 pt-2">Free consultation
-for all</p></div>
-               </div>
-            </div>
-            <div class="col-md-3 p-2">
-                <div class="row">
-                   <div class="col-4"><img class="w-100" src="images/icon-3.jpg" alt=""></div>
-                   <div class="col-8">
-                       <h6 class="mt-0 pt-2">Consult a dentist
-via 1800-266-2336</p></div>
-               </div>
-            </div>
-            <div class="col-md-3 p-2">
-                <div class="row">
-                   <div class="col-4"><img class="w-100" src="images/icon-4.jpg" alt=""></div>
-                   <div class="col-8">
-                       <h6 class="mt-0 pt-2">Access through chat,
-audio or video call</p></div>
-               </div>
-            </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="row">
+    <br>
+    <div style="" id="botbg">
 
-            <div class="col-md-1"></div>
-            <div class="col-md-5 mb-4">
-                <h1 class="my-3" style="color: red;">How it works</h1>
-                <p class="text-secondary">
-                    You can connect with a dentist with a few simple clicks, or simply call us on 1800-266-2336 and we’ll help you book a free dental appointment. It's that easy!
-                </p >
-                <div id="carouselExampleSlidesOnly" data-interval="400" class="carousel " data-bs-ride="carousel" >
-                    <div class="carousel-inner p-3">
-                        <div class="carousel-item active" >
-                        <div class="shadow p-3 my-3" id="shadowbox">
+        <div class="container">
+           
+            <br>
+            <div class="row" >
+    
+                <div class="col-md-7 mb-4 p-3">
+                    <h1 class="my-3" style="color: red;">How it works</h1>
+                    <h2 class="text-dark">
+                        You can connect with a dentist with a few simple clicks, or simply call us on <span style="color: red;font-weight: 700;">1800-266-2336</span> and we’ll help you book a free dental appointment. 
+                    </h2 >
+                    <br>
+                    <br>
+                    <br>
                     <div class="row">
-                        <div class="col-3 text-center" style="text-align: end;">
-                            <img class="w-100" src="images/icon-5.jpg" alt="">
+                        <div class="col-md-6  " >
+                            <div class="shadow" style="border-radius: 24px;">
+                                <div class="row">
+                                <img class="w-25 ms-3" src="images/vibrate.svg" alt="">
+                                <h5 class="col mt-4">Get started using your phone, tablet or any device</p>
+                            </div>
+                            </div>
+                            <br>
                         </div>
-                        <div class="col-9 my-auto">
-                            <h6 class="pl-2 ">Get started using your phone, tablet or any device</p>
+                        <div class="col-md-6  " >
+                            <div class="shadow" style="border-radius: 24px;">
+                                <div class="row">
+                                <img class="w-25 ms-3" src="images/note.svg" alt="">
+                                <h5 class="col mt-4">Provide all necessary information and images required</p>
+                            </div>
+                            </div>
+                            <br>
                         </div>
                     </div>
-                </div>
-                <div class="shadow-sm p-3 my-3" id="shadowbox">
                     <div class="row">
-                        <div class="col-3 text-center" style="text-align: end;">
-                            <img class="w-100" src="images/icon-7.jpg" alt="">
+                        <div class="col-md-6  " >
+                            <div class="shadow" style="border-radius: 24px;">
+                                <div class="row">
+                                <img class="w-25 ms-3" src="images/calender.svg" alt="">
+                                <h5 class="col mt-4">We will schedule your appointment with an expert</p>
+                            </div>
+                            </div>
+                            <br>
                         </div>
-                        <div class="col-9 my-auto">
-                            <h6 class="pl-2 ">We will schedule your appointment with an expert</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="shadow-sm p-3 my-3" id="shadowbox">
-                    <div class="row">
-                        <div class="col-3 text-center" style="text-align: end;">
-                            <img class="w-100" src="images/icon-6.jpg" alt="">
-                        </div>
-                        <div class="col-9 my-auto">
-                            <h6 class="pl-2 ">Talk to a dentist</p>
-                        </div>
-                    </div>
-                </div>
-                        </div>
-                        <div class="carousel-item">
-                        <div class="shadow-sm p-3 my-3" id="shadowbox">
-                    <div class="row">
-                        <div class="col-3 text-center" style="text-align: end;">
-                            <img class="w-100" src="images/icon-5.jpg" alt="">
-                        </div>
-                        <div class="col-9 my-auto">
-                            <h6 class="pl-2 ">Get started using your phone, tablet or any device</p>
+                        <div class="col-md-6  " >
+                            <div class="shadow bg-white" style="border-radius: 24px;">
+                                <div class="row">
+                                <img class="w-25 ms-3" src="images/doc.svg" alt="">
+                                <h5 class="col mt-4">Talk to a dentist through audio or video call.</p>
+                            </div>
+                            </div>
+                            <br>
                         </div>
                     </div>
+                    <br>
+                
                 </div>
-                <div class="shadow p-3 my-3" id="shadowbox">
-                    <div class="row">
-                        <div class="col-3 text-center" style="text-align: end;">
-                            <img class="w-100" src="images/icon-7.jpg" alt="">
+                
+                            
+                            
                         </div>
-                        <div class="col-9 my-auto">
-                            <h6 class="pl-2 ">We will schedule your appointment with an expert</p>
-                        </div>
+
                     </div>
-                </div>
-                <div class="shadow-sm p-3 my-3" id="shadowbox">
-                    <div class="row">
-                        <div class="col-3 text-center" style="text-align: end;">
-                            <img class="w-100" src="images/icon-6.jpg" alt="">
+                    <br>
+                    <div id="footer" >
+
+                        
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-2" id="logoforpc">
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <img class="w-100 " src="images/logo.svg" alt="">
+                                </div>
+                                <div class="col-md-8 text-center text-white" id="powerpc">
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h5>This website is powered by <strong>LOGY.AI</strong></h5>
+                                </div>
+                                <div class="col-md-2 text-right">
+                                    <br>
+                                    <img class=" " src="images/pock.svg" alt="">
+                                </div>
+                                <div class="col-md-3 text-center" id="logoformob">
+                                    <br>
+                                    
+                                    <br>
+                                    <img class="w-50 " src="images/logo.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 text-center text-white" id="powermob">
+                                    <br>
+                                    <br>
+                                    <h6>This website is powered by <strong>LOGY.AI</strong></h6>
+                                </div>
                         </div>
-                        <div class="col-9 my-auto">
-                            <h6 class="pl-2 ">Talk to a dentist</p>
-                        </div>
+                        <br>
+                        <br>
                     </div>
-                </div>
-                        </div>
-                        <div class="carousel-item">
-                        <div class="shadow-sm p-3 my-3" id="shadowbox">
-                    <div class="row">
-                        <div class="col-3 text-center" style="text-align: end;">
-                            <img class="w-100" src="images/icon-5.jpg" alt="">
-                        </div>
-                        <div class="col-9 my-auto">
-                            <h6 class="pl-2 ">Get started using your phone, tablet or any device</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="shadow-sm p-3 my-3" id="shadowbox">
-                    <div class="row">
-                        <div class="col-3 text-center" style="text-align: end;">
-                            <img class="w-100" src="images/icon-7.jpg" alt="">
-                        </div>
-                        <div class="col-9 my-auto">
-                            <h6 class="pl-2 ">We will schedule your appointment with an expert</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="shadow p-3 my-3" id="shadowbox">
-                    <div class="row">
-                        <div class="col-3 text-center" style="text-align: end;">
-                            <img class="w-100" src="images/icon-6.jpg" alt="">
-                        </div>
-                        <div class="col-9 my-auto">
-                            <h6 class="pl-2 ">Talk to a dentist</p>
-                        </div>
-                    </div>
-                </div>
-                        </div>
-                    </div>
-                </div>
+    </div>
                 
                 
             </div>
-            <div class="col-md-5 my-auto text-center">
-                <img class="w-75" src="images/mobile.png" alt="">
-            </div>
-            <div class="col-md-1"></div>
+      
 
         </div>
         
     </div>
-    <footer class="py-4" style="background: url(images/bg3.svg);background-size: cover;background-position:top;">
-        <div class="container my-3">
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-md-8">
-                    <img class="w-25" src="images/logo.png" alt="">
-                    <br>
-                    <br>
-                </div>
-                <div class="col-md-4 text-dark my-auto " style="text-align: end;">
-                    <a href="" class="text-white h5" style="text-decoration: none;">Terms & Conditions</a>
-                    <br>
-                    <a href="" class="text-white h5" style="text-decoration: none;">Powered with LOGY.AI</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    
 </body>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 </html>
